@@ -82,8 +82,8 @@ public class CityList {
      */
     public void clearList() {
 
-        //for (City c : cities) {
-         //   cities.remove(c);
-        //}
+        for (City c : cities) {
+            cities.remove(c);
+        }
     }
 }
