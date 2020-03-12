@@ -1,5 +1,7 @@
 package com.example.simpleparadox.listycity;
 
+import android.util.Log;
+
 import org.junit.jupiter.api.Test;
 
 
@@ -102,10 +104,7 @@ class CityListTest {
         cityList.add(new City("Laval", "Quebec"));
 
         cityList.clearList();
-
         assertEquals(0, cityList.countCities());
-
-
 
     }
 

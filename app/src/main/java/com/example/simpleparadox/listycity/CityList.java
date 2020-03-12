@@ -81,9 +81,6 @@ public class CityList {
      * Clears all cities from list
      */
     public void clearList() {
-
-        for (City c : cities) {
-            cities.remove(c);
-        }
+        cities.clear();
     }
 }
