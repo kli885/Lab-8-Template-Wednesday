@@ -3,6 +3,7 @@ package com.example.simpleparadox.listycity;
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
+import java.util.ListIterator;
 
 /**
  * This is a class that keeps track of a list of city objects
@@ -81,6 +82,8 @@ public class CityList {
      * Clears all cities from list
      */
     public void clearList() {
-        cities.clear();
+        for (City c : new ArrayList<>(cities)) {
+            cities.remove(c);
+        }
     }
 }
